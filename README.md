@@ -1,3 +1,7 @@
-# Current Date and Time styled with Tailwind CSS
+Tailwind Time and Date Project
+Description
+A simple, responsive portfolio project styled with Tailwind CSS, featuring real-time display of the current date and time. Hosted on Vercel.
 
-Get the current date and time in your HTML styled with Tailwind CSS.
+Features
+📅 Displays current date and time dynamically.
+
