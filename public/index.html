@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tailwind CSS Starter Kit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Date and Time</title>
 
-    <link rel="stylesheet" href="style.css">
-
-    <script src="time.js" defer></script>
-    <script src="date.js" defer></script>
-
+  <link rel="stylesheet" href="style.css">
+  <script src="time.js" defer></script>
+  <script src="date.js" defer></script>
 </head>
-<body>
-
-    <main>
-  
-        <!-- Time -->
-        <time class="time">
-                <data class="hours">HH</data> :
-                <data class="minutes">MM</data> :
-                <data class="seconds">SS</data>
-                <data class="amOrPM">AM/PM</data>
-            </time>
-      
-          
-        <!-- Date -->
-        <time class="date">
-          <data class="month">Month</data>
-          <data class="dayOfMonth">00</data>,
-          <data class="year">0000</data> -
-          <data class="dayOfWeek">SMTWTFS</data>
-        </time>
-      
-      </main>
+<body class="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-100 to-blue-300">
+  <!-- Main Container -->
+  <div class="bg-white shadow-xl rounded-lg p-8 text-center w-96">
+    <h1 class="text-red-500 text-2xl font-bold mb-2 tracking-wide">Live Date and Time</h1>
+    <p class="text-gray-500 mb-6 text-sm italic">A live update of the current date and time</p>
     
+    <!-- Date Section -->
+    <div class="text-gray-700 text-lg mb-4">
+      <span class="dayOfWeek font-semibold"></span>, 
+      <span class="month"></span> 
+      <span class="dayOfMonth"></span>, 
+      <span class="year"></span>
+    </div>
+
+    <!-- Time Section -->
+    <div class="text-5xl font-extrabold text-green-500 mb-4">
+      <span class="hours"></span>:<span class="minutes"></span>:<span class="seconds"></span>
+      <span class="amOrPM text-2xl text-gray-600"></span>
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-4">
+      <p class="text-sm text-gray-600">Built with Tailwind CSS</p>
+    </footer>
+  </div>
 </body>
 </html>
